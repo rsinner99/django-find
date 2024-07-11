@@ -34,7 +34,7 @@ operator_map = {
     'startswith': " LIKE '{}%%'",
     'endswith': " LIKE '%%{}'",
     'contains': " LIKE '%%{}%%'",
-    'regex': " REGEXP '%%{}%%'"
+    'regex': " RLIKE '{}'"
 }
 
 def _mkcol(tbl, name, alias):
